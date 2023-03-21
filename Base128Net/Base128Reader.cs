@@ -36,14 +36,16 @@ internal class Base128Reader
     {
         long result = 0L;
         Span<byte> view = this.view.Span;
+        int offset = Offset;
         while (true)
         {
-            long tmp = view[Offset];
-            result |= (tmp & 0x7fL) << (Offset * 7);
-            Offset++;
+            int tmp = view[offset];
+            result |= (tmp & 0x7fL) << (offset * 7);
+            offset++;
             if ((tmp & 0x80) == 0)
                 break;
         }
+        Offset = offset;
         return result;
     }
 
@@ -56,14 +58,16 @@ internal class Base128Reader
     {
         int result = 0;
         Span<byte> view = this.view.Span;
+        int offset = Offset;
         while (true)
         {
-            int tmp = view[Offset];
-            result |= (tmp & 0x7f) << (Offset * 7);
-            Offset++;
+            int tmp = view[offset];
+            result |= (tmp & 0x7f) << (offset * 7);
+            offset++;
             if ((tmp & 0x80) == 0)
                 break;
         }
+        Offset = offset;
         return result;
     }
 

@@ -11,7 +11,7 @@ namespace Base128Net;
 
 public class Base128ReaderBenchmarks
 {
-    Base128Reader reader = CreateReader(1000, Enumerable.Range(0, 31).Select(x => 1L << x).ToArray());
+    static Base128Reader reader = CreateReader(1000, Enumerable.Range(0, 31).Select(x => 1L << x).ToArray());
 
     private static Base128Reader CreateReader(int size, params long[] list)
     {
