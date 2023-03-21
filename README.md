@@ -1,4 +1,4 @@
-# SheetJS Project
+﻿# SheetJS Project
 
 
 The main goals of this project are to introduce you to lower-level JavaScript and evaluate your ability to discuss and analyze solutions.
@@ -19,6 +19,12 @@ The Protobuf spec defines base 128 varint.  Parsing values is a common requireme
 
 3) compare the performance of the two algorithms for data in the signed 32-bit integer range.  Libraries like BenchmarkJS are commonly used for comparing performance of JS functions
 
+
+
+
+
+
+
 ### Task 2: Comparative analysis across languages
 
 1) Implement the same algorithm in a scripting language (a language you are familiar with, e.g. python) and in a traditional lower-level language (e.g. Java or C/C++)
@@ -26,3 +32,15 @@ The Protobuf spec defines base 128 varint.  Parsing values is a common requireme
 2) Compare the performance of the implementations, adjusting for startup time and other concerns.
 
 3) Be prepared to discuss the viability of JavaScript for data munging
+
+
+
+### Results
+
+|                  | Javascript         | C#                | Python         |
+| ---------------- | ------------------ | ----------------- | -------------- |
+| BigInt           | 194,103 ops/sec    |                   |                |
+| UInt64           |                    | 3,411,804 ops/sec |                |
+| UInt32           | 12,857,613 ops/sec | 4,364,906 ops/sec | 17,128 ops/sec |
+| UInt32 Optimized | 11,172,532 ops/sec |                   |                |
+
