@@ -19,7 +19,18 @@ class Base128Reader:
                 break
         return result
 
-    def parseInt32(self):
-        result = self.parseInteger(self)
+    def parseInteger(self):
+        result = self.parseUInteger(self)
         return (result >> 1) if (result & 1)==0 else ~(result >> 1)
+
+    def write(self, number):
+        view = self.view
+        more = True
+
+        while more:
+            data = number & 0x7f
+            more = number >= 128
+            view[self.offset] = data | (0x80 if more else 0)
+            self.offset += 1
+            number >>= 7
 
