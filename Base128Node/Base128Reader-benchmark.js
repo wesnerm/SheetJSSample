@@ -30,6 +30,11 @@ suite
         for (let i = 0; i < 31; i++)
             reader.parseUint32();
     })
+    .addFunction('Uint32Optimized test', s => {
+        reader.reset();
+        for (let i = 0; i < 31; i++)
+            reader.parseUint32Optimized();
+    })
     // Add inputs
     .addInput("Standard", [0])
     // Add listeners

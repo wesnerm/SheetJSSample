@@ -34,6 +34,18 @@ module.exports = class Base128Reader {
         return result;
     }
 
+    parseUint32Optimized() {
+        let result = 0;
+        let view = this.view;
+        for (var i = this.offset | 0 ; true; i = (i+1)|0) {
+            let tmp = view[i] | 0;
+            result |= (tmp & 0x7f) << (i * 7 | 0);
+            if (tmp < 128)
+                break;
+        }
+        this.offset = (i + 1) | 0;
+        return result;
+    }
 
     convertToSignedZigZag(number) {
         return number >= 0 ? (number << 1) : (~number << 1 | 1);
