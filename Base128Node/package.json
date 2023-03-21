@@ -1,0 +1,21 @@
+{
+  "name": "base128node",
+  "version": "0.0.0",
+  "description": "Base128 Node Project",
+  "main": "app.js",
+  "scripts": {},
+  "author": {
+    "name": "Wesner Moise"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/node": "^18.15.5",
+    "benchmark": "^2.1.4",
+    "benchtable": "^0.1.0",
+    "eslint": "^8.36.0",
+    "jest": "^29.5.0",
+    "rimraf": "^4.4.0",
+    "typescript": "^5.0.2"
+  },
+  "eslintConfig": {}
+}

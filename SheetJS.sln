@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Base128App", "Base128App\Base128App.njsproj", "{43585E6F-8156-4EB8-A886-F68E476C15E2}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Base128Node", "Base128Node\Base128Node.njsproj", "{DB35543F-9E71-4605-8906-B861312B9317}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Base128Python", "Base128Python\Base128Python.pyproj", "{6DF84C95-42E6-41D6-A7BC-2E4C5CB353C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base128Net", "Base128Net\Base128Net.csproj", "{A7899606-9314-4368-A6EA-CB657584E278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43585E6F-8156-4EB8-A886-F68E476C15E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43585E6F-8156-4EB8-A886-F68E476C15E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43585E6F-8156-4EB8-A886-F68E476C15E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43585E6F-8156-4EB8-A886-F68E476C15E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB35543F-9E71-4605-8906-B861312B9317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB35543F-9E71-4605-8906-B861312B9317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB35543F-9E71-4605-8906-B861312B9317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB35543F-9E71-4605-8906-B861312B9317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF84C95-42E6-41D6-A7BC-2E4C5CB353C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF84C95-42E6-41D6-A7BC-2E4C5CB353C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7899606-9314-4368-A6EA-CB657584E278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7899606-9314-4368-A6EA-CB657584E278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7899606-9314-4368-A6EA-CB657584E278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7899606-9314-4368-A6EA-CB657584E278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8EE41A0-B798-4D3E-AA40-8B567CD54D86}
+	EndGlobalSection
+EndGlobal
